@@ -1,0 +1,9 @@
+project: pyglossary
+target: fuzz-gloss
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_gloss.py
+    libfuzzer: true
+    timeout: 12
